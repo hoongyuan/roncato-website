@@ -1,0 +1,224 @@
+:root{
+  --navy:#1f1f1f;--navy-2:#3a3a3a;--ink:#1c1c1c;--body:#4b4b4b;--muted:#7a7a76;
+  --line:#e6e4df;--bg:#ffffff;--soft:#f3f3f1;--brass:#c8102e;--brass-soft:#f3ece1;
+  --red:#c8102e;--red-2:#a50d26;--beige:#efe6d8;
+  --radius:12px;--max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--body);background:var(--bg);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--navy-2)}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-weight:600;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(36px,4.6vw,56px)}
+h2{font-size:clamp(28px,3.2vw,40px)}
+h3{font-size:22px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+.lead{font-size:18px;color:var(--body);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:.2s;border:1px solid transparent}
+.btn-primary{background:var(--navy);color:#fff}.btn-primary:hover{background:var(--navy-2)}
+.btn-ghost{border-color:#ffffff66;color:#fff}.btn-ghost:hover{background:#ffffff14}
+.btn-outline{border-color:var(--navy);color:var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
+
+/* top bar + header */
+.topbar{background:var(--navy);color:#c9d4e0;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none}
+header.site{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1}
+.logo b{font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:24px;color:var(--navy);letter-spacing:.06em}
+.logo span{font-size:11px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-top:3px}
+nav.main{display:flex;align-items:center;gap:30px}
+nav.main a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover,nav.main a.active{border-bottom-color:var(--brass);color:var(--navy)}
+nav.main a.btn{border:0;color:#fff;padding:10px 20px}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:14px;cursor:pointer}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#12355a 60%,#1b4a78 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border:1px solid #ffffff1f;border-radius:50%;box-shadow:0 0 0 80px #ffffff08,0 0 0 160px #ffffff05}
+.hero .wrap{position:relative;z-index:1;padding-top:110px;padding-bottom:110px}
+.hero h1{color:#fff;max-width:17ch}
+.hero p{color:#cfdae6;font-size:19px;max-width:56ch;margin-top:22px}
+.hero .actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.page-hero{background:var(--navy);color:#fff}
+.page-hero .wrap{padding-top:72px;padding-bottom:64px}
+.page-hero h1{color:#fff;font-size:clamp(32px,4vw,48px)}
+.page-hero p{color:#cfdae6;max-width:60ch;margin-top:14px;font-size:18px}
+.crumbs{font-size:13px;color:#9fb2c6;margin-bottom:16px}.crumbs a{color:#cfdae6;text-decoration:none}
+
+/* trust bar */
+.trust{border-bottom:1px solid var(--line);background:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust div{padding:26px 22px;border-left:1px solid var(--line)}
+.trust div:first-child{border-left:0;padding-left:0}
+.trust b{display:block;font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:28px;color:var(--navy);font-weight:600;line-height:1.2}
+.trust small{font-size:13px;color:var(--muted)}
+
+/* sections */
+section.block{padding:96px 0}
+section.soft{background:var(--soft)}
+.head{max-width:720px;margin-bottom:48px}
+.head p{margin-top:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+.card p{margin-top:10px}
+.icon{width:44px;height:44px;border-radius:8px;background:var(--brass-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.icon svg{width:22px;height:22px;stroke:var(--brass);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.brand-card{display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff}
+.brand-card .top{padding:40px 36px;min-height:190px;display:flex;flex-direction:column;justify-content:flex-end}
+.brand-card .top.pc{background:var(--brass-soft)}
+.brand-card .top.hm{background:var(--ink);color:#fff}
+.brand-card .top.hm h3,.brand-card .top.hm .tag{color:#fff}
+.brand-card h3{font-size:34px}
+.brand-card .tag{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:8px}
+.brand-card .body{padding:28px 36px 32px;display:flex;flex-direction:column;gap:18px;flex:1}
+.brand-card .more{margin-top:auto;font-weight:600;text-decoration:none}
+
+.check{list-style:none;display:grid;gap:10px;margin-top:20px}
+.check li{padding-left:28px;position:relative}
+.check li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.3 2.3 4.7-5' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") center/16px no-repeat}
+
+.facts{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.facts th,.facts td{text-align:left;padding:16px 22px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15px}
+.facts th{width:38%;color:var(--muted);font-weight:500;background:var(--soft)}
+.facts td{color:var(--ink)}
+.facts tr:last-child th,.facts tr:last-child td{border-bottom:0}
+
+.channels{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.channel{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:#fff;transition:.2s}
+.channel:hover{border-color:var(--navy);box-shadow:0 4px 14px #0f2a4714}
+.channel span{display:flex;flex-direction:column;line-height:1.35}
+.channel b{color:var(--ink);font-size:15px}
+.channel small{color:var(--muted);font-size:13px}
+.channel i{font-style:normal;color:var(--navy)}
+
+.brand-detail{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start;padding:72px 0;border-top:1px solid var(--line)}
+.brand-detail:first-of-type{border-top:0;padding-top:0}
+.brand-panel{border-radius:var(--radius);padding:44px 38px;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end}
+.brand-panel.pc{background:var(--brass-soft)}
+.brand-panel.hm{background:var(--ink)}
+.brand-panel.hm h2,.brand-panel.hm .tag{color:#fff}
+.brand-panel .tag{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:10px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pills span{font-size:13px;padding:5px 12px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+
+.contact-cards .card h4{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+.contact-cards .card p{margin-top:0;color:var(--ink);font-size:17px}
+.map{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;height:100%;min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.note{background:var(--brass-soft);border-left:3px solid var(--brass);padding:18px 22px;border-radius:6px;font-size:15px}
+
+.cta{background:var(--navy);color:#fff;border-radius:14px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:clamp(26px,2.8vw,34px)}
+.cta p{color:#cfdae6;margin-top:8px}
+
+footer.site{background:#0b1f35;color:#a9b8c8;font-size:14px;margin-top:0}
+footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-top:64px;padding-bottom:48px}
+footer.site h5{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+footer.site a{color:#a9b8c8;text-decoration:none}footer.site a:hover{color:#fff}
+footer.site ul{list-style:none;display:grid;gap:8px}
+footer.site .logo b{color:#fff}footer.site .logo span{color:#8fa3b8}
+footer.site .legal{border-top:1px solid #ffffff1a}
+footer.site .legal .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:20px;padding-bottom:20px;font-size:13px}
+
+@media (max-width:960px){
+  .trust .wrap,.grid4{grid-template-columns:1fr 1fr}
+  .trust div:nth-child(3){border-left:0;padding-left:0}
+  .grid3,.grid2,.split,.brand-detail{grid-template-columns:1fr}
+  footer.site .wrap{grid-template-columns:1fr 1fr}
+  .menu-toggle{display:block}
+  nav.main{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:16px 24px 24px;border-bottom:1px solid var(--line);gap:14px}
+  nav.main.open{display:flex}
+  section.block{padding:72px 0}
+  .cta{padding:36px}
+}
+@media (max-width:560px){
+  .trust .wrap,.grid4{grid-template-columns:1fr}
+  .trust div{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .trust div:first-child{border-top:0}
+  footer.site .wrap{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .facts th{width:42%}
+}
+
+/* photos */
+.photo{border-radius:var(--radius);overflow:hidden;position:relative;background:#ddd}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 24px 20px;background:linear-gradient(transparent,rgba(8,20,36,.85));color:#fff;font-size:14px}
+.photo figcaption b{display:block;font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:22px;font-weight:600}
+.boutiques{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.boutiques .photo{aspect-ratio:16/10}
+.brand-card .top.img{padding:0;min-height:0;position:relative;aspect-ratio:16/9}
+.brand-card .top.img img{width:100%;height:100%;object-fit:cover}
+.brand-card .top.img .label{position:absolute;left:0;right:0;bottom:0;padding:40px 28px 20px;background:linear-gradient(transparent,rgba(8,20,36,.85))}
+.brand-card .top.img .label h3,.brand-card .top.img .label .tag{color:#fff}
+.brand-panel.img{padding:0;min-height:0;overflow:hidden;position:relative;aspect-ratio:4/3}
+.brand-panel.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.brand-panel.img .label{position:relative;margin-top:auto;padding:60px 30px 26px;background:linear-gradient(transparent,rgba(8,20,36,.88));width:100%}
+.brand-panel.img .label h2,.brand-panel.img .label .tag{color:#fff}
+.brand-panel.img{display:flex;flex-direction:column;justify-content:flex-end}
+.hero.photo-hero{background:linear-gradient(100deg,rgba(11,31,53,.94) 0%,rgba(15,42,71,.82) 45%,rgba(15,42,71,.35) 100%),url(images/pierre-cardin-boutique.jpg) center/cover}
+.hero.photo-hero::after{display:none}
+@media (max-width:960px){.boutiques{grid-template-columns:1fr}}
+
+
+/* ===== Light grey / white / red / beige theme ===== */
+h1,h2,h3,h4{font-weight:800;letter-spacing:-.025em}
+h3{font-weight:700}
+.btn{border-radius:8px}
+.btn-primary{background:var(--red);color:#fff}.btn-primary:hover{background:var(--red-2)}
+.btn-outline{border-color:var(--ink);color:var(--ink)}.btn-outline:hover{background:var(--ink);color:#fff}
+.topbar{background:var(--red);color:#ffe3e7}
+.logo b{color:var(--ink);font-weight:800;letter-spacing:.04em}
+.logo b::after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-left:4px;vertical-align:middle}
+nav.main a:hover,nav.main a.active{border-bottom-color:var(--red);color:var(--ink)}
+/* light hero over photo */
+.hero.photo-hero{background:linear-gradient(100deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 42%,rgba(255,255,255,.15) 78%,rgba(255,255,255,0) 100%),url(images/pierre-cardin-boutique.jpg) center right/cover;color:var(--ink)}
+.hero h1{color:var(--ink)}
+.hero p{color:var(--body)}
+.hero .btn-ghost{border-color:var(--ink);color:var(--ink)}.hero .btn-ghost:hover{background:var(--ink);color:#fff}
+.hero .actions .btn-primary{background:var(--red)!important;color:#fff!important}
+.page-hero{background:var(--beige);color:var(--ink)}
+.page-hero h1{color:var(--ink)}.page-hero p{color:var(--body)}
+.crumbs{color:var(--muted)}.crumbs a{color:var(--red)}
+.trust b{color:var(--red);font-weight:800}
+section.soft{background:var(--soft)}
+.icon{background:#fbe9ec}.icon svg{stroke:var(--red)}
+.card{border-radius:var(--radius)}
+.check li::before{background-color:var(--red)}
+.facts th{background:var(--brass-soft)}
+.channel:hover{border-color:var(--red);box-shadow:0 4px 14px #c8102e14}
+.channel i{color:var(--red)}
+a{color:var(--red)}
+.brand-card .more{color:var(--red)}
+.note{background:var(--brass-soft);border-left-color:var(--red)}
+.cta{background:var(--red)}
+.cta p{color:#ffe3e7}
+.cta .btn-ghost{background:#fff;color:var(--red);border-color:#fff}.cta .btn-ghost:hover{background:var(--beige)}
+footer.site{background:var(--beige);color:#5a554d}
+footer.site h5{color:var(--ink)}
+footer.site a{color:#5a554d}footer.site a:hover{color:var(--red)}
+footer.site .logo b{color:var(--ink)}footer.site .logo span{color:var(--muted)}
+footer.site .legal{border-top:1px solid #dccfba}
+.eyebrow{color:var(--red)}
+.pills span{background:var(--soft);border-color:var(--line)}
+@media (max-width:960px){.hero.photo-hero{background:linear-gradient(rgba(255,255,255,.93),rgba(255,255,255,.88)),url(images/pierre-cardin-boutique.jpg) center/cover}}
+
+/* ===== White & grey theme ===== */
+:root{--red:#3a3a3a;--red-2:#1f1f1f;--beige:#eeeeee;--brass-soft:#f4f4f4;--soft:#f5f5f5;--line:#e3e3e3;--muted:#7b7b7b}
+.topbar{background:#3a3a3a;color:#d9d9d9}
+.icon{background:#efefef}
+.cta{background:#3a3a3a}.cta p{color:#d6d6d6}
+.cta .btn-ghost{color:#1f1f1f}.cta .btn-ghost:hover{background:#e9e9e9}
+footer.site{background:#eeeeee;color:#555}
+footer.site .legal{border-top-color:#dcdcdc}
+.logo b::after{background:#9a9a9a}
+.channel:hover{box-shadow:0 4px 14px #0000000f}

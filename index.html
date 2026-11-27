@@ -3,180 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roncato Sdn Bhd | Pierre Cardin &amp; Hummer in Malaysia</title>
-<meta name="description" content="Roncato Sdn Bhd is the Malaysian company behind Pierre Cardin and Hummer bags and accessories, sold in boutiques, department stores, TikTok Shop and Shopee across Malaysia.">
+<title>Roncato Sdn Bhd | Pierre Cardin & Hummer bags in Malaysia</title>
+<meta name="description" content="Roncato Sdn Bhd is the Malaysian company behind Pierre Cardin and Hummer bags and accessories, sold in boutiques, department stores, TikTok Shop and Shopee nationwide.">
 <link rel="canonical" href="https://roncato.com.my/">
-<meta property="og:title" content="Roncato Sdn Bhd">
-<meta property="og:description" content="The Malaysian company behind Pierre Cardin and Hummer bags.">
+<meta property="og:title" content="Roncato Sdn Bhd | Pierre Cardin & Hummer bags in Malaysia">
+<meta property="og:description" content="Roncato Sdn Bhd is the Malaysian company behind Pierre Cardin and Hummer bags and accessories, sold in boutiques, department stores, TikTok Shop and Shopee nationwide.">
 <meta property="og:url" content="https://roncato.com.my/">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{--ink:#000;--paper:#fff;--red:#e10600;--grey:#f2f2f2;--line:1px solid var(--ink)}
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:"Space Grotesk",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);border-left:var(--line);border-top:var(--line)}
-  .cell{border-right:var(--line);border-bottom:var(--line);padding:20px;min-width:0}
-  .page{max-width:1440px;margin:0 auto}
-  header .grid{border-top:0}
-
-  header{position:sticky;top:0;z-index:10;background:var(--paper)}
-  header .cell{padding:18px 20px;display:flex;flex-direction:column;justify-content:center;min-height:72px}
-  header a.cell:hover{background:var(--ink);color:var(--paper)}
-  .brandmark b{font-size:15px;letter-spacing:.04em}
-
-  .hero .head{grid-column:1/4;grid-row:1/3;display:flex;align-items:flex-end;padding:120px 20px 28px}
-  .hero h1{font-size:clamp(48px,7.4vw,112px);font-weight:700;line-height:.92;letter-spacing:-.035em}
-  .red{background:var(--red);color:#fff}
-  .hero .num{display:flex;align-items:flex-end;min-height:240px}
-  .hero .num span{font-size:clamp(96px,11vw,168px);font-weight:700;line-height:.78;letter-spacing:-.05em}
-  .stat{min-height:120px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
-  a.stat:hover{background:var(--ink);color:#fff}
-  .stat .arrow{font-size:20px}
-
-  .sec-label{grid-column:1/2;display:flex;flex-direction:column;justify-content:space-between;gap:30px}
-  .sec-label .n{font-size:64px;font-weight:700;line-height:.8;letter-spacing:-.04em}
-  .sec-body{grid-column:2/5}
-  h2{font-size:clamp(34px,4.2vw,60px);font-weight:700;line-height:1;letter-spacing:-.03em;margin-bottom:22px;max-width:16ch}
-  .lead{font-size:19px;max-width:60ch;color:#222}
-  .lead+.lead{margin-top:14px}
-
-  .brand{grid-column:span 2;display:flex;flex-direction:column;gap:22px;padding:28px 20px}
-  .brand h3{font-size:clamp(40px,5vw,76px);font-weight:700;line-height:.9;letter-spacing:-.04em}
-  .brand p{max-width:44ch;color:#222}
-  .brand.dark{background:var(--ink);color:#fff}
-  .brand.dark p{color:#ccc}
-  .links{display:grid;grid-template-columns:1fr 1fr;border-top:var(--line);margin-top:auto}
-  .dark .links{border-top-color:#fff}
-  .links a{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:var(--line);gap:10px}
-  .dark .links a{border-bottom-color:#555}
-  .links a:nth-child(odd){padding-right:16px}
-  .links a:nth-child(even){padding-left:16px;border-left:var(--line)}
-  .dark .links a:nth-child(even){border-left-color:#555}
-  .links a:hover{color:var(--red)}
-  .links small{display:block;font-size:12px;text-transform:none;letter-spacing:0;opacity:.7;margin-top:2px}
-
-  .buy{min-height:200px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
-  .buy h4{font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:6px}
-  .buy p{font-size:15px;color:#333}
-  .buy a:hover{color:var(--red)}
-  .buy.grey{background:var(--grey)}
-
-  .contact .big{grid-column:1/3;padding:28px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
-  .contact .big a.email{font-size:clamp(24px,2.8vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.05;word-break:break-word}
-  .contact .big a.email:hover{text-decoration:underline}
-  .info{display:flex;flex-direction:column;gap:10px;justify-content:space-between;min-height:150px}
-  .info div{font-size:17px}
-  .info a:hover{color:var(--red)}
-
-  @media (max-width:900px){
-    .grid{grid-template-columns:1fr 1fr}
-    header .navlink{display:none}
-    header .brandmark{grid-column:1/3}
-    .hero .head{grid-column:1/3;grid-row:auto;padding-top:72px}
-    .sec-label,.sec-body,.contact .big,.brand{grid-column:1/3}
-    footer .cell{grid-column:1/3!important}
-  }
-  @media (max-width:520px){
-    .links{grid-template-columns:1fr}
-    .links a:nth-child(even){padding-left:0;border-left:0}
-    .links a:nth-child(odd){padding-right:0}
-    .buy,.info,.stat{grid-column:1/3}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Roncato Sdn Bhd","url":"https://roncato.com.my/","email":"enquiries@roncato.com.my","address":{"@type":"PostalAddress","streetAddress":"Lot 37624, Jalan 2/37A, Taman Bukit Maluri","postalCode":"52100","addressLocality":"Kuala Lumpur","addressCountry":"MY"},"brand":[{"@type":"Brand","name":"Pierre Cardin"},{"@type":"Brand","name":"Hummer"}]}</script>
 </head>
 <body>
-<div class="page">
+<div class="topbar"><div class="wrap"><span>Official Malaysian license holder for Pierre Cardin &amp; Hummer</span><span class="hide-sm"><a href="mailto:enquiries@roncato.com.my">enquiries@roncato.com.my</a> &nbsp;·&nbsp; Mon–Fri, 9am–6pm</span></div></div>
+<header class="site"><div class="wrap">
+  <a class="logo" href="index.html"><b>RONCATO</b><span>Sdn Bhd</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav"><a href="index.html" class="active">Home</a><a href="about.html">About Us</a><a href="brands.html">Our Brands</a><a href="where-to-buy.html">Where to Buy</a><a class="btn btn-primary" href="contact.html">Contact Us</a></nav>
+</div></header>
+<main>
 
-<header>
-  <nav class="grid">
-    <a class="cell brandmark" href="#top"><b>RONCATO</b><span class="mono">Sdn Bhd</span></a>
-    <a class="cell navlink mono" href="#about">01 About</a>
-    <a class="cell navlink mono" href="#brands">02 Brands</a>
-    <a class="cell navlink mono" href="#contact">04 Contact</a>
-  </nav>
-</header>
+<section class="hero photo-hero"><div class="wrap">
+  <span class="eyebrow">Roncato Sdn Bhd · Kuala Lumpur</span>
+  <h1>Trusted bag brands, brought to Malaysia.</h1>
+  <p>We are the Malaysian company behind Pierre Cardin and Hummer bags and accessories. Through our own boutiques, leading department stores and online marketplaces, we bring well-made products to customers nationwide.</p>
+  <div class="actions"><a class="btn btn-primary" href="brands.html">Explore our brands</a><a class="btn btn-ghost" href="contact.html">Partner with us</a></div>
+</div></section>
 
-<main id="top">
-  <section class="grid hero">
-    <div class="cell head"><h1>Bags for how Malaysia moves.</h1></div>
-    <div class="cell red num"><span>02</span></div>
-    <div class="cell mono">Brands<br>under one roof</div>
-    <a class="cell stat mono" href="#brands"><span>Pierre Cardin<br>Official licensee</span><span class="arrow">→</span></a>
-    <a class="cell stat mono" href="#brands"><span>Hummer<br>Everyday carry</span><span class="arrow">→</span></a>
-    <div class="cell stat mono"><span>74<br>Pierre Cardin locations</span><span>Nationwide</span></div>
-    <div class="cell stat mono"><span>Kuala Lumpur<br>Headquarters</span><span>Malaysia</span></div>
-  </section>
+<section class="trust"><div class="wrap">
+  <div><b>Official</b><small>Pierre Cardin &amp; Hummer license holder in Malaysia</small></div>
+  <div><b>74</b><small>Pierre Cardin locations nationwide</small></div>
+  <div><b>3</b><small>Department store partners: Parkson, AEON, SOGO</small></div>
+  <div><b>257176-T</b><small>Registered Malaysian company</small></div>
+</div></section>
 
-  <section class="grid" id="about">
-    <div class="cell sec-label"><span class="mono">About</span><span class="n">01</span></div>
-    <div class="cell sec-body">
-      <h2>A Malaysian house of brands.</h2>
-      <p class="lead">Roncato Sdn Bhd is a Kuala Lumpur-based company and the official Malaysian license holder for Pierre Cardin bags and accessories. We also build and grow Hummer, our brand for everyday carry.</p>
-      <p class="lead">Our team runs every step in-house: design and purchasing, warehousing, retail partnerships, e-commerce, live selling and marketing. That way we bring well-made, well-priced bags to customers across Malaysia.</p>
-    </div>
-  </section>
+<section class="block"><div class="wrap">
+  <div class="head"><span class="eyebrow">Our brands</span><h2>Two brands, one standard of quality.</h2><p class="lead">Each brand has its own customer and character. Behind both is the same team, the same sourcing standards and the same commitment to value.</p></div>
+  <div class="grid2">
+    <div class="brand-card"><div class="top img"><img src="images/pierre-cardin-boutique.jpg" alt="Inside a Pierre Cardin boutique in Malaysia" loading="lazy"><div class="label"><span class="tag">Official Malaysian licensee</span><h3>Pierre Cardin</h3></div></div>
+      <div class="body"><p>The French fashion house known for timeless design. We bring that heritage to handbags, totes, slings, travel bags and accessories for Malaysian customers.</p><a class="more" href="brands.html#pierre-cardin">About Pierre Cardin →</a></div></div>
+    <div class="brand-card"><div class="top img"><img src="images/hummer-boutique.jpg" alt="Hummer boutique storefront in Malaysia" loading="lazy"><div class="label"><span class="tag">Official Malaysian licensee</span><h3>Hummer</h3></div></div>
+      <div class="body"><p>Rugged bags, luggage, belts and wallets built for life on the move. Tough materials and smart design at an honest price.</p><a class="more" href="brands.html#hummer">About Hummer →</a></div></div>
+  </div>
+</div></section>
 
-  <section class="grid" id="brands">
-    <div class="cell sec-label"><span class="mono">Our brands</span><span class="n">02</span></div>
-    <div class="cell sec-body"><h2>Two brands. Two ways to carry.</h2></div>
+<section class="block soft"><div class="wrap">
+  <div class="head"><span class="eyebrow">What we do</span><h2>From design to doorstep, managed in-house.</h2></div>
+  <div class="grid4">
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg></div><h3>Design &amp; sourcing</h3><p>Our design and purchasing teams develop and source each collection.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div><h3>Warehousing &amp; distribution</h3><p>We run our own warehouse and supply stores and online orders nationwide.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9h18"/><path d="M9 20v-6h6v6"/></svg></div><h3>Retail &amp; e-commerce</h3><p>Boutiques, department stores, our website, TikTok Shop and Shopee.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11v2a2 2 0 002 2h2l5 4V5L7 9H5a2 2 0 00-2 2z"/><path d="M16 8a5 5 0 010 8"/></svg></div><h3>Marketing &amp; live commerce</h3><p>Content, ads, affiliates and live selling to reach customers wherever they shop.</p></div>
+  </div>
+</div></section>
 
-    <article class="cell brand">
-      <span class="mono">Brand 01 · Official Malaysian licensee</span>
-      <h3>Pierre<br>Cardin</h3>
-      <p>The French fashion house known for avant-garde design and timeless style. In Malaysia we bring that heritage to handbags, totes, slings, travel bags and accessories.</p>
-      <div class="links mono">
-        <a href="https://www.pierrecardin.com.my" target="_blank" rel="noopener"><span>Website<small>pierrecardin.com.my</small></span>↗</a>
-        <a href="https://www.tiktok.com/@pierrecardin.my" target="_blank" rel="noopener"><span>TikTok Shop<small>@pierrecardin.my</small></span>↗</a>
-        <a href="https://shopee.com.my/pierrecardinstudio.os" target="_blank" rel="noopener"><span>Shopee<small>pierrecardinstudio.os</small></span>↗</a>
-        <a href="https://www.instagram.com/pierrecardin.my/" target="_blank" rel="noopener"><span>Instagram<small>@pierrecardin.my</small></span>↗</a>
-        <a href="https://www.facebook.com/malaysiapierrecardin" target="_blank" rel="noopener"><span>Facebook<small>malaysiapierrecardin</small></span>↗</a>
-      </div>
-    </article>
+<section class="block"><div class="wrap split">
+  <div><span class="eyebrow">Where to buy</span><h2>Find us in store and online.</h2>
+    <p class="lead" style="margin-top:14px">Visit Pierre Cardin and Hummer boutiques across Malaysia, or find Pierre Cardin at Parkson, AEON and SOGO. Both brands are also available on TikTok Shop and Shopee.</p>
+    <a class="btn btn-outline" style="margin-top:28px" href="where-to-buy.html">See all channels →</a></div>
+  <ul class="check"><li>Pierre Cardin and Hummer boutiques</li><li>Parkson, AEON and SOGO department stores</li><li>pierrecardin.com.my official online store</li><li>Official TikTok Shop and Shopee stores for both brands</li></ul>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap"><div class="cta"><div><h2>Interested in working with us?</h2><p>Retail partnerships, distribution, corporate orders and collaborations.</p></div><a class="btn btn-ghost" href="contact.html">Get in touch →</a></div></div></section>
 
-    <article class="cell brand dark">
-      <span class="mono">Brand 02 · Everyday carry</span>
-      <h3>Hummer</h3>
-      <p>Durable, practical bags for life on the move, from work to weekend. Tough materials, smart design, honest value.</p>
-      <div class="links mono">
-        <a href="https://www.tiktok.com/@hummer.os" target="_blank" rel="noopener"><span>TikTok Shop<small>@hummer.os</small></span>↗</a>
-        <a href="https://shopee.com.my/hummerstudio.os" target="_blank" rel="noopener"><span>Shopee<small>hummerstudio.os</small></span>↗</a>
-      </div>
-    </article>
-  </section>
-
-  <section class="grid" id="buy">
-    <div class="cell sec-label"><span class="mono">Where to buy</span><span class="n">03</span></div>
-    <div class="cell sec-body"><h2>In store and online, nationwide.</h2></div>
-    <div class="cell buy"><span class="mono">A</span><div><h4>Boutiques</h4><p>Pierre Cardin boutiques across Peninsular Malaysia, Sabah and Sarawak.</p></div></div>
-    <div class="cell buy grey"><span class="mono">B</span><div><h4>Department stores</h4><p>Parkson, AEON and SOGO outlets nationwide.</p></div></div>
-    <div class="cell buy"><span class="mono">C</span><div><h4>TikTok Shop</h4><p><a href="https://www.tiktok.com/@pierrecardin.my" target="_blank" rel="noopener">@pierrecardin.my</a><br><a href="https://www.tiktok.com/@hummer.os" target="_blank" rel="noopener">@hummer.os</a></p></div></div>
-    <div class="cell buy grey"><span class="mono">D</span><div><h4>Shopee</h4><p><a href="https://shopee.com.my/pierrecardinstudio.os" target="_blank" rel="noopener">pierrecardinstudio.os</a><br><a href="https://shopee.com.my/hummerstudio.os" target="_blank" rel="noopener">hummerstudio.os</a></p></div></div>
-  </section>
-
-  <section class="grid contact" id="contact">
-    <div class="cell big red">
-      <span class="mono">04 · Contact</span>
-      <div>
-        <p class="mono" style="margin-bottom:10px">Partnerships · Distribution · Collaborations · Enquiries</p>
-        <a class="email" href="mailto:enquiries@roncato.com.my">enquiries@roncato.com.my</a>
-      </div>
-    </div>
-    <div class="cell info"><span class="mono">Office</span><div>Lot 37624, Jalan 2/37A,<br>Taman Bukit Maluri,<br>52100 Kuala Lumpur</div></div>
-    <div class="cell info"><span class="mono">Hours</span><div>Mon – Fri<br>9:00am – 6:00pm<br><a href="https://wa.me/60122699771" target="_blank" rel="noopener">WhatsApp +60 12-269 9771</a></div></div>
-  </section>
 </main>
-
-<footer class="grid">
-  <div class="cell mono" style="grid-column:1/3">© <span id="y">2026</span> Roncato Sdn Bhd (257176-T)</div>
-  <div class="cell mono" style="grid-column:3/5">Pierre Cardin is a registered trademark used under license.</div>
+<footer class="site">
+  <div class="wrap">
+    <div><a class="logo" href="index.html"><b>RONCATO</b><span>Sdn Bhd</span></a>
+      <p style="margin-top:16px;max-width:34ch">The Malaysian company behind Pierre Cardin and Hummer bags and accessories.</p></div>
+    <div><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="brands.html">Our Brands</a></li><li><a href="where-to-buy.html">Where to Buy</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h5>Shop online</h5><ul><li><a href="https://www.pierrecardin.com.my" target="_blank" rel="noopener">pierrecardin.com.my</a></li><li><a href="https://www.tiktok.com/@pierrecardin.my" target="_blank" rel="noopener">Pierre Cardin · TikTok</a></li><li><a href="https://shopee.com.my/pierrecardinstudio.os" target="_blank" rel="noopener">Pierre Cardin · Shopee</a></li><li><a href="https://www.tiktok.com/@hummer.os" target="_blank" rel="noopener">Hummer · TikTok</a></li><li><a href="https://shopee.com.my/hummerstudio.os" target="_blank" rel="noopener">Hummer · Shopee</a></li></ul></div>
+    <div><h5>Head office</h5><p>Lot 37624, Jalan 2/37A,<br>Taman Bukit Maluri,<br>52100 Kuala Lumpur, Malaysia</p><p style="margin-top:10px"><a href="mailto:enquiries@roncato.com.my">enquiries@roncato.com.my</a></p></div>
+  </div>
+  <div class="legal"><div class="wrap"><span>© <span class="yr">2026</span> Roncato Sdn Bhd (257176-T). All rights reserved.</span><span>Pierre Cardin and Hummer are registered trademarks used under license.</span></div></div>
 </footer>
-
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script>
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+</script>
 </body>
 </html>
